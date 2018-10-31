@@ -18,6 +18,8 @@ public class Calculate {
                 for(int index=i;index<segmentsSorted.size();index++){
                     if(segmentsSorted.get(index).left<=rc&&segmentsSorted.get(index).right>=rc){
                         segmentsSorted.get(index).flag=1;
+                    }else if(segments.get(index).getLeft()>rc){
+                        break;
                     }
                 }
             }
